@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions </title>
+</head>
+<body>
+    <center><h1>ARROW FUNCTIONS</h1></center>
+    <!--Question-1-->
+    <pre><b>1.Write an arrow function that takes two parameters, a and b, and returns their sum.</b></pre>
+    <pre>
+            <b>CODE</b>
+            let sum = (a,b)=>`The Sum of a+b is: ${a+b}`;
+            console.log(sum(10,30)); 
+    </pre>
+    <center><img src="./Q1.png" height="500px" width="700px"></center>
+    <!--Question-2-->
+    <pre><b>2.Create an arrow function that takes a single parameter name and returns a greeting message: “Hello, {name}!”</b></pre>
+    <pre>
+        <b>CODE</b>
+        let greet = (name)=>`Hello ${name}`;
+        console.log(greet('Pavan Kalyan'))
+    </pre>
+    <center><img src="./Q2.png" height="500px" width="700px"></center>
+    <!--Question-3-->
+    <pre><b>3.Write an arrow function that checks if a number is even and returns true if it is, or false otherwise.</b></pre>
+    <pre>
+        <b>CODE</b>
+        let isEven = (a)=>(a%2==0)?true:false;
+        console.log(isEven(4));
+        console.log(isEven(5));
+    </pre>
+    <center><img src="./Q3.png" height="500px" width="700px"></center>
+    <!--Question 4-->
+    <pre><b>4.Write an arrow function that accepts a number and returns true if the number is greater than 10, or false otherwise.</b></pre>
+    <pre>
+        <b>CODE</b>
+        let isGreaterThan10 = (num)=>(num>10)?true:false;
+        console.log(isGreaterThan10(11));
+        console.log(isGreaterThan10(5));
+    </pre>
+    <center><img src="./Q4.png" height="500px" width="700px"></center>
+    <!--Question-5-->
+    <pre><b>5.Create an arrow function that takes two strings, compares their lengths, and returns the longer string. If both have the same length, return “Equal length.”</b></pre>
+    <pre>
+        <b>CODE</b>
+        let strLength = (str1,str2)=>{
+            if(str1.length>str2.length){
+                return str1;
+            }
+            else if(str2.length>str1.length){
+                return str2;
+            }
+            else{
+                return 'Equal  Length'
+            }
+        }
+        console.log(strLength('pavan','pavanK'));
+        
+        //Method -2
+        
+        let strLength2 = (str1,str2)=>(str1.length == str2.length)?'Equal Length':(str1.length>str2.length)?str1:str2;
+        console.log(strLength2('PAVAN', 'PAVANK'));
+    </pre>
+    <center><img src="./Q5.png" height="500px" width="700px"></center>
+</body>
+</html>
+
